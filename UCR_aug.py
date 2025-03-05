@@ -108,7 +108,7 @@ def normalize(x):
         x[a] = (x[a]-x[a].mean())/x[a].std()
 
 
-# example here we use the .ts file format from sktime 
+# example here, we use the .ts file format from sktime 
 dataset = "Car"
 train_x, train_y = load_from_tsfile(f"/mnt/raid1/yunrui/data/Univariate_ts/{dataset}/{dataset}_TRAIN.ts", return_data_type="numpy2d")
 test_x, test_y = load_from_tsfile(f"/mnt/raid1/yunrui/data/Univariate_ts/{dataset}/{dataset}_TEST.ts", return_data_type="numpy2d")
@@ -124,7 +124,7 @@ clf.fit(train_x, train_y)
 y_pred = clf.predict(test_x)
 acc_pre = accuracy_score(test_y, y_pred)
 
-# padding length to add on each end of the time series instance
+# padding length to add on each end of the time series instance 20 percent of padding added to each instance in this example
 padding_percentage=0.2
 padding_length = int(train_x.shape[1]*padding_percentage)
 
