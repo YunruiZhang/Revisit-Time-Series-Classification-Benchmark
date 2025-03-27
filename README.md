@@ -22,7 +22,15 @@ The results and experimental code for the proposed **UCR Augmented** benchmark a
 The script for generating the **UCR Augmented** dataset, along with an example of how to augment time series classification datasets, can be found in **`UCR_aug.py`**.
 
 ## Citation
-Coming soon
+@misc{zhang2025revisittimeseriesclassification,
+      title={Revisit Time Series Classification Benchmark: The Impact of Temporal Information for Classification}, 
+      author={Yunrui Zhang and Gustavo Batista and Salil S. Kanhere},
+      year={2025},
+      eprint={2503.20264},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2503.20264}, 
+}
 
 ## References
 Yanping Chen, Eamonn Keogh, Bing Hu, Nurjahan Begum, Anthony Bagnall, Abdullah Mueen and Gustavo Batista (2015). The UCR Time Series Classification Archive. URL www.cs.ucr.edu/~eamonn/time_series_data/
